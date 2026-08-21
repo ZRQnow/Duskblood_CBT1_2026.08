@@ -7,6 +7,7 @@
     {"topic": "characters_roles_builds", "path": "03_analysis/character_roster.md", "status": "active"},
     {"topic": "progression_economy", "path": "03_analysis/economy_progression.md", "status": "active"},
     {"topic": "project_production_signals", "path": "03_analysis/project_signals.md", "status": "active"},
+    {"topic": "visual_image_collection", "path": "03_analysis/image_collection_analysis.md", "status": "active"},
     {"topic": "objectives_scoring_match_flow", "path": "03_analysis/match_flow.md", "status": "planned"},
     {"topic": "map_level_events", "path": "03_analysis/map_level_design.md", "status": "planned"},
     {"topic": "pve_boss_design", "path": "03_analysis/pve_bosses.md", "status": "planned"},
