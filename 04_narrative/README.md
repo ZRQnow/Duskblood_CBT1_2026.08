@@ -1,9 +1,8 @@
-# 04_narrative：叙事与论点
+# 04_narrative：论点与研究叙事
 
-这里负责把分析组织成可检查的论证结构，不新增未经证据支持的事实。
+这一层把分散分析组织成能够进入行业研究报告的主张链，不新增未经证据支持的事实。
 
-- `argument_map.json`：机器可读的主张、证据、反证和依赖关系。
-- `outline.md`：面向成文的章节顺序、篇幅和素材安排。
+- `argument_map.json`：机器可读的 `claim_id → evidence_id → counterevidence → analysis_doc` 关系。
+- `outline.md`：面向成文的章节顺序、篇幅与素材安排。
 
-主张发生变化时，先更新论点地图，再同步提纲和草稿，避免文章与证据链脱节。
-
+更新顺序建议：先补 evidence → 更新 analysis → 更新 claim → 最后同步 outline/draft。这样可以避免文章先有结论、再倒找证据。

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0.0",
+  "project": "Duskblood-CBT1",
+  "purpose": "The Duskbloods CBT1 / Global Network Test industry research base",
+  "ai_entrypoint": "AGENTS.md",
+  "canonical_datasets": {
+    "sources": "02_evidence/source_register.jsonl",
+    "assets": "02_evidence/asset_manifest.jsonl",
+    "evidence": "02_evidence/observations.jsonl",
+    "social_reception": "02_evidence/social_reception.jsonl",
+    "claims": "04_narrative/argument_map.json",
+    "analysis_index": "03_analysis/analysis_index.json"
+  },
+  "id_graph": [
+    "source_id -> asset_id",
+    "asset_id -> evidence_id",
+    "evidence_id -> analysis",
+    "evidence_id -> claim_id"
+  ],
+  "directory_roles": {
+    "00_brief": "scope, context, taxonomy and reader contract",
+    "01_sources_raw": "unaltered raw source materials",
+    "02_evidence": "registries, AI-readable derivatives and verifiable observations",
+    "03_analysis": "interpretation and industry analysis",
+    "04_narrative": "claim-evidence graph and report structure",
+    "05_drafts": "working drafts",
+    "06_qc": "verification and compliance checks",
+    "07_final": "approved final outputs"
+  },
+  "truth_priority": [
+    "primary_official",
+    "firsthand_test_observation",
+    "direct_interview",
+    "professional_media",
+    "community_report",
+    "unverified_social"
+  ],
+  "machine_rules": {
+    "unknown_value": null,
+    "dates": "ISO 8601",
+    "jsonl": "one independent record per line",
+    "analysis_requires_evidence_id": true,
+    "claims_require_scope_note": true
+  }
+}
