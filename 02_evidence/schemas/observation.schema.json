@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Duskblood Evidence Observation",
+  "type": "object",
+  "required": ["evidence_id", "source_id", "asset_id", "evidence_type", "statement", "confidence", "verification_status"],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^EVD-[0-9]{6}$"},
+    "source_id": {"type": "string"},
+    "asset_id": {"type": "string"},
+    "evidence_type": {"type": "string"},
+    "topic_tags": {"type": "array", "items": {"type": "string"}},
+    "subject": {"type": ["string", "null"]},
+    "statement": {"type": "string"},
+    "locator": {
+      "type": "object",
+      "properties": {
+        "timestamp_start": {"type": ["string", "null"]},
+        "timestamp_end": {"type": ["string", "null"]},
+        "page": {"type": ["integer", "null"]},
+        "frame": {"type": ["integer", "null"]},
+        "text_anchor": {"type": ["string", "null"]},
+        "region_note": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "observation_method": {"type": ["string", "null"]},
+    "confidence": {"enum": ["high", "medium", "low"]},
+    "verification_status": {"enum": ["single_source", "corroborated", "conflicted", "needs_review"]},
+    "corroborating_source_ids": {"type": "array", "items": {"type": "string"}},
+    "analyst_note": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

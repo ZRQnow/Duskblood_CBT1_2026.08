@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Duskblood Asset Record",
+  "type": "object",
+  "required": ["asset_id", "source_id", "path", "asset_type", "content_role"],
+  "properties": {
+    "asset_id": {"type": "string", "pattern": "^AST-[0-9]{6}$"},
+    "source_id": {"type": "string"},
+    "path": {"type": "string"},
+    "asset_type": {"enum": ["video", "image", "audio", "text", "html", "pdf", "archive", "other"]},
+    "content_role": {"enum": ["raw", "derived"]},
+    "derived_from_asset_id": {"type": ["string", "null"]},
+    "sha256": {"type": ["string", "null"]},
+    "file_size_bytes": {"type": ["integer", "null"]},
+    "duration_ms": {"type": ["integer", "null"]},
+    "width": {"type": ["integer", "null"]},
+    "height": {"type": ["integer", "null"]},
+    "language": {"type": ["string", "null"]},
+    "processing_status": {"enum": ["raw_only", "queued", "processed", "reviewed"]},
+    "rights_status": {"enum": ["public", "restricted", "permission_received", "unknown"]},
+    "tags": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

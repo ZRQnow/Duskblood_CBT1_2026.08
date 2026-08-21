@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Duskblood Source Record",
+  "type": "object",
+  "required": ["source_id", "source_type", "title", "collected_at", "reliability"],
+  "properties": {
+    "source_id": {"type": "string", "pattern": "^SRC-[A-Z]{2,3}-[0-9]{4}$"},
+    "source_type": {"type": "string"},
+    "title": {"type": "string"},
+    "creator": {"type": ["string", "null"]},
+    "platform": {"type": ["string", "null"]},
+    "canonical_url": {"type": ["string", "null"]},
+    "published_at": {"type": ["string", "null"]},
+    "collected_at": {"type": "string"},
+    "language": {"type": ["string", "null"]},
+    "region": {"type": ["string", "null"]},
+    "test_session_id": {"type": ["string", "null"]},
+    "reliability": {"enum": ["primary_official", "firsthand_test", "direct_interview", "professional_media", "community_report", "unverified_social"]},
+    "rights_status": {"enum": ["public", "restricted", "permission_received", "unknown"]},
+    "supersedes_source_id": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

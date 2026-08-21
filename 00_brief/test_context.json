@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Duskblood-CBT1",
+  "game_title": "The Duskbloods",
+  "test_name": "Global Network Test / CBT1 research window",
+  "test_status": "active",
+  "platform": "Nintendo Switch 2",
+  "official_test_window": {
+    "start_date": "2026-08-21",
+    "end_date": "2026-08-24",
+    "timezone_note": "Session dates can cross calendar days by region; store original timezone for every timestamp."
+  },
+  "online_player_count": "1-8",
+  "research_scope": [
+    "core_game_loop",
+    "combat_and_movement",
+    "pvpve_and_player_interaction",
+    "objectives_scoring_and_match_flow",
+    "characters_roles_and_builds",
+    "pve_enemies_and_bosses",
+    "map_level_and_event_design",
+    "progression_and_meta_systems",
+    "ui_ux_and_onboarding",
+    "network_and_performance",
+    "player_reception",
+    "market_positioning_and_comparables",
+    "project_and_production_signals"
+  ],
+  "official_reference_urls": [
+    "https://www.nintendo.com/us/store/products/the-duskbloods-switch-2/"
+  ],
+  "handling_constraints": {
+    "test_material_rights": "verify_per_source",
+    "capture_or_streaming_policy": "verify_before_ingest_or_redistribution",
+    "personal_information": "minimize_and_redact_when_not_research_relevant"
+  }
+}
