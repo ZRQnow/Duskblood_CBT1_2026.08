@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Duskblood-CBT1",
+  "facts": [],
+  "field_guide": {
+    "fact_id": "唯一编号，例如 UI-0001",
+    "source_id": "来源编号",
+    "timestamp_or_page": "视频时间码、截图编号或页面位置",
+    "screen": "界面名称",
+    "element": "控件或信息元素",
+    "observed_text": "按画面原样转录的文本",
+    "observed_value": "数值或状态；未知时为 null",
+    "locale": "界面语言",
+    "certainty": "confirmed、strong_inference、weak_signal 或 unknown",
+    "notes": "遮挡、OCR 不确定性或版本说明"
+  }
+}
+

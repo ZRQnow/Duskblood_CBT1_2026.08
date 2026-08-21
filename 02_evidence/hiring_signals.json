@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Duskblood-CBT1",
+  "signals": [],
+  "field_guide": {
+    "signal_id": "唯一编号，例如 HIRE-0001",
+    "source_id": "招聘来源编号",
+    "role_title": "职位名称",
+    "location": "工作地点或远程状态",
+    "signal_category": "团队扩张、技术栈、内容方向、运营或其他",
+    "observed_requirement": "招聘文本中的直接观察",
+    "inference": "由观察形成的有限推断",
+    "certainty": "strong_inference、weak_signal 或 unknown",
+    "first_seen_at": "首次发现日期",
+    "last_verified_at": "最后核验日期"
+  }
+}
+

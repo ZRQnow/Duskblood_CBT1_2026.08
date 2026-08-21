@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Duskblood-CBT1",
+  "thesis": null,
+  "claims": [],
+  "field_guide": {
+    "claim_id": "唯一编号，例如 CLAIM-0001",
+    "claim": "可被支持或反驳的清晰陈述",
+    "claim_type": "fact、interpretation 或 forecast",
+    "supports": "支持该主张的 source_id、事实编号或测量编号数组",
+    "counterevidence": "反证或冲突证据编号数组",
+    "depends_on": "前置主张编号数组",
+    "certainty": "confirmed、strong_inference、weak_signal 或 unknown",
+    "scope_note": "版本、时间、地区或样本限制",
+    "status": "draft、verified、rejected 或 superseded"
+  }
+}
+

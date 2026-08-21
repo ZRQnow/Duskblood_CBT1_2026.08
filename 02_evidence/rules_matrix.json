@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Duskblood-CBT1",
+  "rules": [],
+  "field_guide": {
+    "rule_id": "唯一编号，例如 RULE-0001",
+    "domain": "战斗、匹配、撤离、奖励、成长或其他领域",
+    "rule_statement": "只描述来源支持的规则",
+    "applies_when": "适用条件",
+    "exceptions": "已观察到的例外；未知时为空数组",
+    "source_ids": "支持该规则的来源编号数组",
+    "evidence_locations": "时间码、页面或截图位置数组",
+    "certainty": "confirmed、strong_inference、weak_signal 或 unknown",
+    "last_verified_at": "ISO 8601 时间"
+  }
+}
+

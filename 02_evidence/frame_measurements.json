@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Duskblood-CBT1",
+  "units": {
+    "timestamp": "HH:MM:SS.mmm",
+    "duration": "frames_and_milliseconds"
+  },
+  "measurements": [],
+  "field_guide": {
+    "measurement_id": "唯一编号，例如 FM-0001",
+    "source_id": "对应 source_register.csv 的来源编号",
+    "start_timestamp": "测量起点时间码",
+    "end_timestamp": "测量终点时间码",
+    "fps": "用于换算的实际或标称帧率",
+    "frame_count": "包含口径需在 method 中说明",
+    "duration_ms": "按帧率计算或工具读取的持续时间",
+    "subject": "角色、动作、UI 或事件",
+    "event": "被测事件",
+    "method": "提帧、逐帧播放或其他可复现方法",
+    "uncertainty": "掉帧、剪辑、压缩或起止帧判断误差",
+    "measured_by": "测量人",
+    "measured_at": "ISO 8601 时间"
+  }
+}
+

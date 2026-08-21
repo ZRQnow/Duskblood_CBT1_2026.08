@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "language": "zh-CN",
+  "project": "Duskblood-CBT1",
+  "audience": [],
+  "scope": {
+    "test_phase": "CBT1",
+    "start_date": null,
+    "end_date": null,
+    "exclusions": [
+      "无来源传言",
+      "未脱敏个人信息",
+      "违反测试协议或版权要求的内容"
+    ]
+  },
+  "certainty_levels": {
+    "confirmed": "可由一手资料或多个独立可靠来源直接复核",
+    "strong_inference": "证据链完整，但来源未直接陈述结论",
+    "weak_signal": "存在相关迹象，尚不足以形成稳定结论",
+    "unknown": "当前证据不足或相互冲突"
+  },
+  "source_priority": [
+    "官方原始材料",
+    "可复核的原始试玩记录",
+    "信誉媒体的一手采访或试玩",
+    "社区二手材料"
+  ],
+  "citation_rules": {
+    "source_id_required_for_facts": true,
+    "retrieval_date_required": true,
+    "timestamp_required_for_video_claims": true,
+    "page_or_section_required_when_available": true,
+    "distinguish_fact_from_inference": true
+  },
+  "writing_rules": [
+    "只把可复核内容写成事实",
+    "所有版本性结论注明 CBT1",
+    "冲突证据并列呈现，不静默取舍",
+    "未知项保留为空值或明确标记，不自行补全"
+  ]
+}
+

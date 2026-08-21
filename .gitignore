@@ -1,0 +1,31 @@
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 临时文件与未完成下载
+*.tmp
+*.temp
+*.part
+*.crdownload
+*.download
+
+# 本地缓存与生成物
+.cache/
+tmp/
+temp/
+
+# 凭据与本地配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.*
+secrets.*
+
