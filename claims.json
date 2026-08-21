@@ -7,7 +7,7 @@
     "claim_id": "唯一编号，例如 CLM-0001",
     "claim": "可被证据支持或反驳的清晰陈述",
     "claim_type": "interpretation、comparison、implication 或 forecast；纯事实应留在 evidence 层",
-    "analysis_topic": "对应 03_analysis 的主题",
+    "analysis_topic": "对应 analysis 目录中的主题",
     "analysis_doc": "对应分析文件路径",
     "evidence_ids": "直接支持该主张的 EVD 编号数组",
     "counterevidence_ids": "反证、冲突证据或重要例外的 EVD 编号数组",

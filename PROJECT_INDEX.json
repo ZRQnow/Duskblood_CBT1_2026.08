@@ -1,15 +1,22 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "3.0.0",
   "project": "Duskblood-CBT1",
   "purpose": "The Duskbloods CBT1 / Global Network Test industry research base",
   "ai_entrypoint": "AGENTS.md",
   "canonical_datasets": {
-    "sources": "02_evidence/source_register.jsonl",
-    "assets": "02_evidence/asset_manifest.jsonl",
-    "evidence": "02_evidence/observations.jsonl",
-    "social_reception": "02_evidence/social_reception.jsonl",
-    "claims": "04_narrative/argument_map.json",
-    "analysis_index": "03_analysis/analysis_index.json"
+    "sources": "source_register.jsonl",
+    "assets": "asset_manifest.jsonl",
+    "evidence": "observations.jsonl",
+    "social_reception": "social_reception.jsonl",
+    "claims": "claims.json",
+    "analysis_index": "analysis_index.json",
+    "analysis_prompt": "analysis/PROMPT.md"
+  },
+  "directory_roles": {
+    "images": "image, screenshot and animated-image assets",
+    "videos": "video assets",
+    "interviews": "interview, translation and interview-derived text assets",
+    "analysis": "research reports and the reusable game-product industry-analysis prompt"
   },
   "id_graph": [
     "source_id -> asset_id",
@@ -17,16 +24,6 @@
     "evidence_id -> analysis",
     "evidence_id -> claim_id"
   ],
-  "directory_roles": {
-    "00_brief": "scope, context, taxonomy and reader contract",
-    "01_sources_raw": "unaltered raw source materials",
-    "02_evidence": "registries, AI-readable derivatives and verifiable observations",
-    "03_analysis": "interpretation and industry analysis",
-    "04_narrative": "claim-evidence graph and report structure",
-    "05_drafts": "working drafts",
-    "06_qc": "verification and compliance checks",
-    "07_final": "approved final outputs"
-  },
   "truth_priority": [
     "primary_official",
     "firsthand_test_observation",
@@ -40,6 +37,7 @@
     "dates": "ISO 8601",
     "jsonl": "one independent record per line",
     "analysis_requires_evidence_id": true,
-    "claims_require_scope_note": true
+    "claims_require_scope_note": true,
+    "asset_paths_are_repository_relative": true
   }
 }

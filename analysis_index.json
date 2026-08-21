@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.0.0",
+  "project": "Duskblood-CBT1",
+  "analysis_prompt": "analysis/PROMPT.md",
+  "modules": [
+    {"topic": "core_loop_pvpve", "path": "analysis/pvpve_loop.md", "status": "active"},
+    {"topic": "combat_movement", "path": "analysis/action_module.md", "status": "active"},
+    {"topic": "characters_roles_builds", "path": "analysis/character_roster.md", "status": "active"},
+    {"topic": "progression_economy", "path": "analysis/economy_progression.md", "status": "active"},
+    {"topic": "project_production_signals", "path": "analysis/project_signals.md", "status": "active"},
+    {"topic": "visual_image_collection", "path": "analysis/image_collection_analysis.md", "status": "active"}
+  ]
+}

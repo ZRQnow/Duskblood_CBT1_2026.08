@@ -8,7 +8,7 @@
   "measurements": [],
   "field_guide": {
     "measurement_id": "唯一编号，例如 FM-0001",
-    "source_id": "对应 source_register.csv 的来源编号",
+    "source_id": "对应 source_register.jsonl 的来源编号",
     "start_timestamp": "测量起点时间码",
     "end_timestamp": "测量终点时间码",
     "fps": "用于换算的实际或标称帧率",
@@ -22,4 +22,3 @@
     "measured_at": "ISO 8601 时间"
   }
 }
-
